@@ -11,7 +11,7 @@ export default function CardList({ data: listData }) {
     return (
         <div className="card-grid">
             {listData.map((item) => (
-                <Card key={item.id} item={item} />
+                <Card key={item.id} {...item} />
             ))}
         </div>
     );
